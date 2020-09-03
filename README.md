@@ -1,6 +1,6 @@
 Server
 
-<b>NOTE: Vendory.py is python based server consuming Booking Kit API, please edit client ID and secrect value to run the server properly  </b>
+<b>NOTE: vendory.py is python based server consuming Booking Kit API, please edit client ID and secrect value to run the server properly  </b>
 required to run python 3.5+, flask, requests
 ### python vendors.py
 ---------------------------------------------------------
