@@ -1,3 +1,5 @@
+<b>NOTE: Vendory.py is python based server consuming Booking Kit API, please edit client ID and secrect value to run the server properly  </b>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
