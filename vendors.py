@@ -7,8 +7,8 @@ app = flask.Flask(__name__)
 def getListOfVendors():
     token_url = "https://api-sandbox.bookingkit.de/oauth/token"
     test_api_url = "https://api-sandbox.bookingkit.de/v3/vendors/"
-    client_id = 'GLS1KEik'
-    client_secret = '4SSju8wtbdqxBYsd5fFnE1DBJj1Xxz4s'
+    client_id = '<<ADD CLIENT ID HERE>>'
+    client_secret = '<<ADD CLIENT SECRET HERE>>'
     data = {'grant_type': 'client_credentials'}
     
     try:
