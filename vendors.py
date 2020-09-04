@@ -21,13 +21,12 @@ def getListOfVendors():
         api_call_response = requests.get(test_api_url, headers=api_call_headers, verify=False)
         print (api_call_response.text)
         res = make_response(api_call_response.text, 200)
-        res.headers.add('Access-Control-Allow-Origin', '*')
 
     except requests.exceptions.RequestException as e:
         raise SystemExit(e)
         res = make_response("internal server issue", 500)
-        res.headers.add('Access-Control-Allow-Origin', '*')
-        
+
+    res.headers.add('Access-Control-Allow-Origin', '*')    
     return res   
     
 if __name__ == "__main__":
