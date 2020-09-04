@@ -7,8 +7,8 @@ app = flask.Flask(__name__)
 def getListOfVendors():
     token_url = "https://api-sandbox.bookingkit.de/oauth/token"
     test_api_url = "https://api-sandbox.bookingkit.de/v3/vendors/"
-    client_id = '<<ADD CLIENT ID HERE>>'
-    client_secret = '<<ADD CLIENT SECRET HERE>>'
+    client_id = 'GLS1KEik'
+    client_secret = '4SSju8wtbdqxBYsd5fFnE1DBJj1Xxz4s'
     data = {'grant_type': 'client_credentials'}
     
     try:
@@ -22,13 +22,13 @@ def getListOfVendors():
         print (api_call_response.text)
         res = make_response(api_call_response.text, 200)
         res.headers.add('Access-Control-Allow-Origin', '*')
-        return res   
+
     except requests.exceptions.RequestException as e:
         raise SystemExit(e)
         res = make_response("internal server issue", 500)
         res.headers.add('Access-Control-Allow-Origin', '*')
-        return res   
+        
+    return res   
     
-
 if __name__ == "__main__":
     app.run(debug=True)
